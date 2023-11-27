@@ -1,6 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
+        Customer customer = new Customer("Jane", "Jane@gmail.com", 1000.00);
+
+        System.out.println("Customer Name: " + customer.getName() + "; Email: " + customer.getEmailAddress() + "; Credit Limit: $" + customer.getCreditLimit());
+
         Customer bob = new Customer("Bob", "bob@gmail.com");
 
         System.out.println("Customer Name: " + bob.getName() + "; Credit Limit: $" + bob.getCreditLimit());
